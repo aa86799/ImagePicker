@@ -1,5 +1,6 @@
  # Intro
- 项目原始地址: https://github.com/jeasonlzy/ImagePicker    最新版到0.6.1
+ 项目原始地址: https://github.com/jeasonlzy/ImagePicker     最新版到0.6.1    
+ 
  二次维护地址：https://github.com/CysionLiu/ImagePicker     最新版到1.2.1.Q    android api 29
  
  由于项目历史问题，使用了 jeasonlzy 的lib，而后切到 CysionLiu 的lib； 现在发现 适配 30 还有新的问题...

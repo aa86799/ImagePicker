@@ -1,5 +1,14 @@
-# 不再维护
-
+ # Intro
+ 项目原始地址: https://github.com/jeasonlzy/ImagePicker    最新版到0.6.1
+ 二次维护地址：https://github.com/CysionLiu/ImagePicker     最新版到1.2.1.Q    android api 29
+ 
+ 由于项目历史问题，使用了 jeasonlzy 的lib，而后切到 CysionLiu 的lib； 现在发现 适配 30 还有新的问题...
+ 好吧，我也fork一下，接个力。
+ 
+ 
+ 
+origination --------
+ 
 # ImagePicker
 Android自定义相册，仿微信UI，实现了拍照、图片选择（单选/多选）、裁剪等功能。
 
@@ -31,9 +40,6 @@ api 'com.cysion:ImagePicker:1.2.0'
 注意，Android Q 对存储框架有较大改动，最主要的是无法通过文件路径获得非*应用专有文件*。
 在本版本库中，也完全放弃了文件路径的方式，全部是以Uri的方式提供文件访问。
 
-
-
- ```
 
 ## 演示
  ![image](https://github.com/jeasonlzy/Screenshots/blob/master/ImagePicker/demo1.png)![image](https://github.com/jeasonlzy/Screenshots/blob/master/ImagePicker/demo2.gif)

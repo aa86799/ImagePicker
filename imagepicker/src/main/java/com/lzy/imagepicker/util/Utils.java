@@ -15,16 +15,27 @@ import android.view.WindowManager;
 public class Utils {
 
     public static int getStatusHeight(Context context) {
-        int statusHeight = -1;
+        int statusHeight;
         try {
             Class<?> clazz = Class.forName("com.android.internal.R$dimen");
             Object object = clazz.newInstance();
             int height = Integer.parseInt(clazz.getField("status_bar_height").get(object).toString());
             statusHeight = context.getResources().getDimensionPixelSize(height);
         } catch (Exception e) {
-            e.printStackTrace();
+            statusHeight = getStatusBarHeight(context);
+//            e.printStackTrace();
         }
         return statusHeight;
+    }
+
+    private static int getStatusBarHeight(Context context) {
+        int result = 0;
+        //获取状态栏高度的资源id
+        int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = context.getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
     }
 
     public static int getImageItemWidth(Activity activity) {

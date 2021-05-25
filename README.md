@@ -11,7 +11,7 @@
 # new version dependence
 
  ```
- api 'io.github.aa86799:image-picker:1.2.3'
+ api 'io.github.aa86799:image-picker:1.2.5'
  ```
  
  
